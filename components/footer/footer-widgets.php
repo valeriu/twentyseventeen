@@ -1,17 +1,19 @@
 <?php
 /**
- * Displays footer widgets if assigned.
+ * Displays footer widgets if assigned
  *
- * @package Twenty Seventeen
+ * @package WordPress
+ * @subpackage Twenty_Seventeen
+ * @since 1.0
  */
+
 ?>
 
 <?php
 if ( is_active_sidebar( 'sidebar-2' ) ||
 	 is_active_sidebar( 'sidebar-3' ) ||
-	 is_active_sidebar( 'sidebar-4' ) ) {
-	?>
-
+	 is_active_sidebar( 'sidebar-4' ) ) :
+?>
 
 	<aside class="widget-area" role="complementary">
 		<div class="wrap">
@@ -29,8 +31,9 @@ if ( is_active_sidebar( 'sidebar-2' ) ||
 			if ( is_active_sidebar( 'sidebar-4' ) ) { ?>
 				<div class="widget-column">
 					<?php dynamic_sidebar( 'sidebar-4' ); ?>
+				</div>
 			<?php } ?>
-		</div>
+		</div><!-- .wrap -->
 	</aside><!-- .widget-area -->
 
-<?php } ?>
+<?php endif; ?>

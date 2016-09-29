@@ -1,13 +1,15 @@
 <?php
 /**
- * The template for displaying comments.
+ * The template for displaying comments
  *
  * This is the template that displays the area of the page that contains both the current comments
  * and the comment form.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Twenty Seventeen
+ * @package WordPress
+ * @subpackage Twenty_Seventeen
+ * @since 1.0
  */
 
 /*
@@ -43,8 +45,8 @@ if ( post_password_required() ) {
 				<div class="nav-previous"><?php previous_comments_link( __( 'Older Comments', 'twentyseventeen' ) ); ?></div>
 				<div class="nav-next"><?php next_comments_link( __( 'Newer Comments', 'twentyseventeen' ) ); ?></div>
 
-			</div>
-		</nav>
+			</div><!-- .nav-links -->
+		</nav><!-- #comment-nav-above -->
 		<?php endif; // Check for comment navigation. ?>
 
 		<ol class="comment-list">
@@ -64,8 +66,8 @@ if ( post_password_required() ) {
 				<div class="nav-previous"><?php previous_comments_link( __( 'Older Comments', 'twentyseventeen' ) ); ?></div>
 				<div class="nav-next"><?php next_comments_link( __( 'Newer Comments', 'twentyseventeen' ) ); ?></div>
 
-			</div>
-		</nav>
+			</div><!-- .nav-links -->
+		</nav><!-- #comment-nav-below -->
 		<?php
 		endif; // Check for comment navigation.
 
